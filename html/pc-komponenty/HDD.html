@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="kosicek">
+    <a href="cart.html">
+      <span id="produkticky"></span>
+      <img src="https://img.waimaoniu.net/1571/1571-201912041641561653.jpg">
+    </a>
+  </div>
+  <div id="hlavicka">
+    <p><a href="index.html">GPU</a> | <a href="CPU.html">CPU</a> | <a href="RAM.html">RAM</a> | <a style="color: yellow"
+        href="HDD.html">HDD</a> | <a href="contacts.html">CONTACTS</a></p>
+  </div>
+  <div id="telicko">
+    <h1 style="text-align: center;">Prohlídněte si naše počítačové komponenty!</h1>
+    <h2 style="text-align: center; font-family: monospace;">Tvrdé drájv</h2>
+
+    <div class="karticka">
+      <img style="width: 70%" src="https://hasselbladrepair.com/wp-content/uploads/2017/03/NEW100GBHDD.jpg">
+      <h1>HDD drive, 100GB</h1>
+      <p>79.999,80 Kč</p>
+      <button onclick="pridej_produkt('HDD drive, 100GB', 79999.80)">Do košíku</button>
+      <br>
+    </div>
+    <div class="karticka">
+      <img style="width: 70%" src="https://www.techspot.com/articles-info/454/images/Image_04.jpg">
+      <h1>RevoDrive Hybrid 100GB (PCIe SSD + 1TB HDD)</h1>
+      <p>99.999,99 Kč</p>
+      <button onclick="pridej_produkt('RevoDrive Hybrid 100GB (PCIe SSD + 1TB HDD)', 99999.99)">Do košíku</button>
+      <br>
+    </div>
+    <div class="karticka">
+      <img style="width: 70%" src="https://eshop.csystem.cz/imgcache/6/b/p574425-555910-0a_-1_-1_44005.jpg">
+      <h1>HP HDD SSD 100GB SATA 6G LFF 3.5</h1>
+      <p>999.999.999,99 Kč</p>
+      <button onclick="pridej_produkt('HP HDD SSD 100GB SATA 6G LFF 3.5', 999999999.99)">Do košíku</button>
+      <br>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

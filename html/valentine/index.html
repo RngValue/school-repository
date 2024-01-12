@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body style="position: absolute; top: -10px; margin-left: 0px; color: white; font-family: 'Great Vibes', cursive;">
+
+  <div class="container">
+    <div id="vcard">
+      <p id="frontText">Hover</p>
+      <p id="backText">BenDover</p>
+      <div id="thecard"></div>
+      <div id="heartone">❤️</div>
+      <div id="hearttwo">🥰</div>
+      <div id="heartthree">💘</div>
+      <div id="heartfour">❤️</div>
+      <div id="heartfive">❤️</div>
+      <div id="heartsix">😍</div>
+    </div>
+    <div id="bg"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+<style>
+  #frontText {
+    opacity: 1;
+    margin-top: 4px;
+    z-index: 99;
+    position: fixed;
+    font-size: 32px;
+    rotate: 0deg;
+    transition: margin-top 1s, margin-right 1s, rotate 1s, font-size 1s, opacity 1s;
+  }
+
+  #backText {
+    opacity: 0;
+    margin-top: 4px;
+    z-index: 99;
+    position: fixed;
+    font-size: 32px;
+    rotate: 0deg;
+    transition: margin-top 1s, margin-right 1s, rotate 1s, font-size 1s, opacity 1s;
+  }
+
+  #vcard div {
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, .5);
+  }
+
+  body {
+    overflow-y: hidden;
+    margin: 0;
+    z-index: -999;
+    background: repeating-linear-gradient(45deg,
+        #ff4278,
+        #ff4278 20px,
+        #ff80a4 20px,
+        #ff80a4 30px);
+  }
+
+  #bg {
+    background-color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 102vh;
+    z-index: -900;
+    transition: background-color 1s;
+  }
+
+  .container {
+    display: flex;
+    margin-top: 25vh;
+    justify-content: center;
+  }
+
+  #thecard {
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, .5);
+    background-color: grey;
+    width: 150px;
+    height: 280px;
+    border-radius: 10px;
+    rotate: 0deg;
+    background-image: url('https://pbs.twimg.com/media/ENKJlAjUEAAxy01.jpg');
+    background-size: 150px 280px;
+    -webkit-transition: background-image 2s ease-in-out;
+    transition: width 1s, background-size 1s, height 1s, rotate 1s, background-image .5s ease-in-out;
+  }
+
+  #vcard {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 280px;
+    position: fixed;
+  }
+
+  #heartone {
+    font-size: 50px;
+    z-index: -1;
+    margin-top: 100px;
+    margin-right: 0px;
+    rotate: 0deg;
+    text-align: center;
+    position: fixed;
+    font-size: 64px;
+    transition: margin-top 1s, margin-right 1s, rotate 1s, font-size 1s;
+  }
+
+  #hearttwo {
+    font-size: 50px;
+    z-index: -1;
+    margin-top: 100px;
+    margin-right: 0px;
+    rotate: 0deg;
+    text-align: center;
+    position: fixed;
+    font-size: 64px;
+    transition: margin-top 1s, margin-right 1s, rotate 1s, font-size 1s;
+  }
+
+  #heartthree {
+    font-size: 50px;
+    z-index: -1;
+    margin-top: 100px;
+    margin-right: 0px;
+    rotate: 0deg;
+    text-align: center;
+    position: fixed;
+    font-size: 64px;
+    transition: margin-top 1s, margin-right 1s, rotate 1s, font-size 1s;
+  }
+
+  #heartfour {
+    font-size: 50px;
+    z-index: -1;
+    margin-top: 100px;
+    margin-right: 0px;
+    rotate: 0deg;
+    text-align: center;
+    position: fixed;
+    font-size: 64px;
+    transition: margin-top 1s, margin-right 1s, rotate 1s, font-size 1s;
+  }
+
+  #heartfive {
+    font-size: 50px;
+    z-index: -1;
+    margin-top: 100px;
+    margin-right: 0px;
+    rotate: 0deg;
+    text-align: center;
+    position: fixed;
+    font-size: 64px;
+    transition: margin-top 1s, margin-right 1s, rotate 1s, font-size 1s;
+  }
+
+  #heartsix {
+    font-size: 50px;
+    z-index: -1;
+    margin-top: 100px;
+    margin-right: 0px;
+    rotate: 0deg;
+    text-align: center;
+    position: fixed;
+    font-size: 64px;
+    transition: margin-top 1s, margin-right 1s, rotate 1s, font-size 1s;
+  }
+
+  #vcard:hover+#bg {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  #vcard:hover #frontText {
+    opacity: 0;
+    margin-top: 8px;
+    margin-right: -95px;
+    z-index: 99;
+    position: fixed;
+    font-size: 44px;
+    rotate: 30deg;
+  }
+
+  #vcard:hover #backText {
+    opacity: 1;
+    margin-top: 20px;
+    margin-right: -125px;
+    z-index: 99;
+    position: fixed;
+    font-size: 44px;
+    rotate: 30deg;
+  }
+
+  #vcard:hover #thecard {
+    background-size: 200px 330px;
+    background-image: url('https://pbs.twimg.com/profile_images/759389265771974656/1veQTxEF_400x400.jpg');
+    width: 200px;
+    height: 330px;
+    rotate: 30deg;
+  }
+
+  #vcard:hover #heartone {
+    font-size: 70px;
+    margin-top: -120px;
+    margin-right: 220px;
+    rotate: -15deg;
+  }
+
+  #vcard:hover #hearttwo {
+    font-size: 64px;
+    margin-top: -140px;
+    margin-right: -180px;
+    rotate: 17deg;
+  }
+
+  #vcard:hover #heartthree {
+    font-size: 68px;
+    margin-top: 400px;
+    margin-right: -220px;
+    rotate: -15deg;
+  }
+
+  #vcard:hover #heartfour {
+    font-size: 65px;
+    margin-top: 390px;
+    margin-right: 180px;
+    rotate: 17deg;
+  }
+
+  #vcard:hover #heartfive {
+    font-size: 62px;
+    margin-top: 100px;
+    margin-right: -420px;
+    rotate: 15deg;
+  }
+
+  #vcard:hover #heartsix {
+    font-size: 67px;
+    margin-top: 100px;
+    margin-right: 430px;
+    rotate: -17deg;
+  }
+</style>
+
+</html>

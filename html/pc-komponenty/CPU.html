@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="kosicek">
+    <a href="cart.html">
+      <span id="produkticky"></span>
+      <img src="https://img.waimaoniu.net/1571/1571-201912041641561653.jpg">
+    </a>
+  </div>
+  <div id="hlavicka">
+    <p><a href="index.html">GPU</a> | <a style="color: yellow" href="CPU.html">CPU</a> | <a href="RAM.html">RAM</a> | <a
+        href="HDD.html">HDD</a> | <a href="contacts.html">CONTACTS</a></p>
+  </div>
+  <div id="telicko">
+    <h1 style="text-align: center;">Prohlídněte si naše počítačové komponenty!</h1>
+    <h2 style="text-align: center; font-family: monospace;">procesory</h2>
+
+    <div class="karticka">
+      <img style="width: 70%" src="https://thumbs.dreamstime.com/b/r%C4%99ka-komputerowy-procesor-17965581.jpg">
+      <h1>Nějakej procák (Kolega ho našel na silnici; Jméno neznáme a krabici nemáme)</h1>
+      <p>4,99 Kč</p>
+      <button onclick="pridej_produkt('Nějakej procák', 4.99)">Do košíku</button>
+      <br>
+    </div>
+    <div class="karticka">
+      <img style="width: 70%"
+        src="https://www.bhphotovideo.com/images/images1500x1500/intel_bx80677g3950_celeron_g3950_3_0_ghz_1304309.jpg">
+      <h1>Intel Celeron G3950 3.0 GHz Dual-Core</h1>
+      <p>444.444,44 Kč</p>
+      <button onclick="pridej_produkt('Intel Celeron G3950 3.0 GHz Dual-Core', 444444.44)">Do košíku</button>
+      <br>
+    </div>
+    <div class="karticka">
+      <img style="width: 70%" src="https://pcper.com/wp-content/uploads/2017/07/3367-img-4827.jpg">
+      <h1>The AMD Ryzen 3 1300X</h1>
+      <p>10.864.352,12 Kč</p>
+      <button onclick="pridej_produkt('The AMD Ryzen 3 1300X', 10864352.12)">Do košíku</button>
+      <br>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

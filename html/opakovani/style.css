@@ -1,0 +1,17 @@
+html {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+}
+
+table {
+  width: 75%;
+  border: .2em solid black;
+}
+
+th,
+td {
+  border: .12em solid black;
+}

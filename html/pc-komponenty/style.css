@@ -1,0 +1,126 @@
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  background-color: #f608f5;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (orientation:portrait) {
+  p {
+    font-size: 5vw;
+  }
+
+  h1 {
+    font-size: 64px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  #hlavicka p {
+    text-align: center;
+    color: white;
+  }
+}
+
+#hlavicka {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4em;
+  background-color: #0f5fa5;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 99;
+}
+
+#hlavicka p {
+  padding: .5em;
+  text-align: center;
+  color: white;
+}
+
+#telicko {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  top: 4em;
+  width: 100vw;
+  position: absolute;
+  min-width: 320px;
+}
+
+@media screen and (orientation:landscape) {
+  #telicko {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    top: 4em;
+    width: 100vw;
+    position: absolute;
+    max-width: 640px;
+    min-width: 320px;
+  }
+}
+
+.karticka {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 4em;
+  background-color: #0f5fa5;
+  text-align: center;
+  color: white;
+  border-radius: .5em;
+}
+
+.karticka img {
+  margin-top: 1em;
+}
+
+.karticka h1 {
+  font-size: 16px;
+}
+
+.karticka p {
+  color: lime;
+}
+
+#kosicek {
+  position: fixed;
+  bottom: 0px;
+  right: 0em;
+  width: 5em;
+  height: 5em;
+  z-index: 99;
+}
+
+#kosicek img {
+  width: 100%;
+  border-radius: 1em;
+}
+
+#produkticky {
+  background: red;
+  color: white;
+  font-size: 32px;
+  position: absolute;
+  border-radius: 1em;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}

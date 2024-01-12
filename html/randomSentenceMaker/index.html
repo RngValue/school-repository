@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1 style="color: white; text-shadow: 2px 2px 5px black;">Welcome</h1>
+  <div id="loleffect"></div>
+  <section>
+    <h2>Sentence-inator</h2>
+    <p>(generates a random sentence)</p>
+    <button onclick="gen_phrase()">gib me sentence</button>
+    <p id="phrase">. . .</p>
+  </section>
+  <section>
+    <h2>Circle-inator</h2>
+    <p>(calculates the content of a circle)</p>
+    <p>
+      <input id="rad" type="number" placeholder="radius">
+      <button onclick="gen_circle()">gib</button>
+    </p>
+    <p id="circle">. . .</p>
+  </section>
+  <section>
+    <h2>🎄xmas-inator🎄</h2>
+    <p>(click le present for something interesting to happen :3)</p>
+    <p>
+      <button class="big_blank_button" onclick="xmasinate()">🎁</button>
+    </p>
+    <p id="circle">-From Santa... maybe</p>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>

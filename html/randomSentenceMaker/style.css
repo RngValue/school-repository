@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
+
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100vh;
+  background: url('https://wallpaperaccess.com/full/869923.gif') fixed;
+  background-position: center;
+  background-size: cover;
+  font-family: system-ui, -apple-system;
+}
+
+.big_blank_button {
+  background-color: #9f8eff;
+  border-color: #9f8eff;
+  font-size: 2rem;
+  transform: scale(1);
+  transition: .8s transform;
+}
+
+button {
+  background-color: #3f7ebf;
+  border: solid;
+  border-color: #3f7ebf;
+}
+
+input {
+  background-color: #88afbf;
+  border: solid;
+  border-color: #3f7ebf;
+  transition: color 1s, border-color 1s;
+}
+
+button:hover {
+  background-color: #88afbf;
+  border: solid;
+  border-color: #88afbf;
+  cursor: pointer;
+}
+
+.big_blank_button:hover {
+  background-color: #9f8eff;
+  border-color: #9f8eff;
+  transform: scale(2);
+}
+
+section {
+  max-width: 640px;
+  margin-top: 1em;
+  background-color: #9f8eff;
+  border: solid;
+  border-color: #9f8eff;
+  color: white;
+  width: 80vw;
+  box-shadow: 2px 2px 5px black;
+}
+
+section,
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#loleffect {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.nicedeco {
+  background-image: url(https://clipart-library.com/img/1232257.png);
+  background-position: top;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
