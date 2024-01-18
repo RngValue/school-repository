@@ -1,16 +1,22 @@
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: rgb(110, 5, 180);
-    color: white;
+    background: #025464;
+    color: #F8F1F1;
     margin: 0;
     font-size: 1.5em;
 }
 a {
+    text-decoration-line: none;
     font-weight: bold;
+    color: #F8F1F1;
+}
+a:hover {
+    font-weight: bold;
+    color: #fffacc;
 }
 h1 {
     text-align: center;
-    text-shadow: .2em .2em indigo;
+    text-shadow: .2em .2em #02327f;
 }
 #holder {
     display: grid;
@@ -18,14 +24,14 @@ h1 {
     width: 100%;
 }
 #html {
-    background: orangered;
+    background: #E57C23;
     padding-left: 1em;
-    text-shadow: .2em .2em rgba(184, 0, 0, 0.5);
+    text-shadow: .2em .2em #FF6523;
 }
 #python {
-    background: cyan;
+    background: #E8AA42;
     padding-left: 1em;
-    text-shadow: .2em .2em rgba(0,125,255,0.5);
+    text-shadow: .2em .2em #E57C23;
 }
 
 @media (orientation: landscape) {
