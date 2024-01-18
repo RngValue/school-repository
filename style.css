@@ -5,6 +5,9 @@ body {
     margin: 0;
     font-size: 1.5em;
 }
+h1 {
+    text-align: center;
+}
 a {
     text-decoration-line: none;
     font-weight: bold;
@@ -14,23 +17,27 @@ a:hover {
     font-weight: bold;
     color: #fffacc;
 }
-h1 {
-    text-align: center;
-}
+
 #holder {
     display: grid;
     grid-template-columns: auto;
     width: 100%;
 }
+
 #html {
     background: #E57C23;
     padding-left: 1em;
-    text-shadow: .2em .2em #FF6523;
 }
+#html h2 {
+    text-shadow: .1em .1em #FF6523;
+}
+
 #python {
     background: #E8AA42;
     padding-left: 1em;
-    text-shadow: .2em .2em #E57C23;
+}
+#python h2 {
+    text-shadow: .1em .1em #E57C23;
 }
 
 @media (orientation: landscape) {
