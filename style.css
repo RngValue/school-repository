@@ -28,16 +28,10 @@ a:hover {
     background: #E57C23;
     padding-left: 1em;
 }
-#html h2 {
-    text-shadow: .1em .1em #FF6523;
-}
 
 #python {
     background: #E8AA42;
     padding-left: 1em;
-}
-#python h2 {
-    text-shadow: .1em .1em #E57C23;
 }
 
 @media (orientation: landscape) {
