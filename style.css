@@ -34,8 +34,18 @@ a:hover {
     padding-left: 1em;
 }
 
+#web-frameworks {
+    background: #ff4949;
+    padding-left: 1em;
+}
+
 @media (orientation: landscape) {
     #holder {
         grid-template-columns: 50% 50%;
+    }
+
+    #web-frameworks {
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
 }
