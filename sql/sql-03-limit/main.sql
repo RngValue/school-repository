@@ -1,0 +1,1 @@
+select revenue from sales limit 5;

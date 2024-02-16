@@ -1,0 +1,1 @@
+select DISTINCT region from country LIMIT 1;
