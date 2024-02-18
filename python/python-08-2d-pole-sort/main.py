@@ -1,3 +1,4 @@
+#bubble sort
 def bubble_sort(unsortedArray):
   arrayLength = len(unsortedArray)
   for k in range(arrayLength):
@@ -7,6 +8,7 @@ def bubble_sort(unsortedArray):
           unsortedArray[k][j], unsortedArray[k][j + 1] = unsortedArray[k][j + 1], unsortedArray[k][j]
   return unsortedArray
 
+#select sort
 def select_sort(unsortedArray):
   arrayLength = len(unsortedArray)
   for k in range(arrayLength):
@@ -18,7 +20,7 @@ def select_sort(unsortedArray):
       unsortedArray[k][i], unsortedArray[k][minI] = unsortedArray[k][minI], unsortedArray[k][i]
   return unsortedArray
 
-
+#insert sort
 def insert_sort(unsortedArray):
   arrayLength = len(unsortedArray)
   for k in range(arrayLength):
@@ -31,6 +33,7 @@ def insert_sort(unsortedArray):
       unsortedArray[k][j + 1] = current
   return unsortedArray
 
+#quick sort
 def partition(unsortedArray, low, high):
     pivot = unsortedArray[high]
     i = low - 1
@@ -49,9 +52,7 @@ def quick_sort(unsortedArray, low, high):
 
 def quick_sort_2d(unsortedArray):
   for i in range (len(unsortedArray)):
-    low = 0
-    high = len(unsortedArray[i])
-    quick_sort(unsortedArray[i], low, high - 1)
+    quick_sort(unsortedArray[i], 0, len(unsortedArray[i]) - 1)
 
 def print_2d_maxtrix(v):
   for i in range(len(v)):
