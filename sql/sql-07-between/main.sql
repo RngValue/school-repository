@@ -1,0 +1,1 @@
+select * from sales where date BETWEEN "2013-01-01" and "2013-06-30" order by date asc
