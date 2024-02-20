@@ -6,9 +6,14 @@ app = Flask(__name__)
 def index():
     return render_template("main.html", css = url_for("static", filename="styles.css"), sample_text = "Hehe")
 
-@app.route("/blah")
+@app.route("/blah", methods=['POST', 'GET'])
 def ah():
-    return render_template("main.html", css = url_for("static", filename="stylesblah.css"), sample_text = "Hehe")
+    if request.method == "GET":
+        print("aaa")
+        return render_template("main.html", css = url_for("static", filename="stylesblah.css"), sample_text = "Lmao")
+    if request.method == "POST":
+        print("doing stuff with \"" + request.json['sheesh'] + "\"")
+        return request.json['sheesh'] + " :3"
 
 if __name__ == "__main__":
     app.run()
