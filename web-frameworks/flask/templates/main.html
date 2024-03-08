@@ -8,11 +8,15 @@
 </head>
 <body>
     <h1>Flask calculator!</h1>
-    <form method="GET">
-        <input type="number" name="erst_nummer">
-        <input type="number" name="zweit_nummer">
+    <form action="/" method="GET">
+        <input type="number" name="erst_nummer" required>
+        <input type="number" name="zweit_nummer" required>
         <input type="submit">
     </form>
     <p>{{ result }}</p>
+    <form action="/bruw" method="POST">
+        <input type="text" name="bruh">
+        <input type="submit">
+    </form>
 </body>
 </html>
