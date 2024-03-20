@@ -14,6 +14,13 @@ def contains_uppercase(passin):
             return 1
     return 0
 
+def contains_lowercase(passin):
+    lowercaseLetter = "abcdefghijklmnopqrstuvwxyz"
+    for x in lowercaseLetter:
+        if x in passin:
+            return 1
+    return 0
+
 def contains_common(passin):
     commonPassword = ["qwertzui", "qwertyui", "abcdefgh", "password", "password123", "12345678"]
     for x in commonPassword:
@@ -22,7 +29,7 @@ def contains_common(passin):
     return 1
 
 def check_safety(passin):
-    return contains_special(passin) + contains_uppercase(passin) + contains_common(passin)
+    return contains_special(passin) + contains_uppercase(passin) + contains_lowercase(passin) + contains_common(passin)
 
 storedPasswords = []
 def check_similarity(passin):
@@ -38,7 +45,7 @@ def check_similarity(passin):
 while(True):
     password = input("password: ")
     if len(password) >= 8:
-        print(f"Your password is this safe: {check_safety(password)}/3")
+        print(f"Your password is this safe: {check_safety(password)}/4")
 
         if check_similarity(password):
             print("your password matches with another one (not saved)")
