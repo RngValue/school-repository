@@ -1,33 +1,37 @@
-import hashlib
-
 def contains_special(passin):
-    if '!' in passin or '@' in passin or '#' in passin or '$' in passin or '%' in passin or '_' in passin or '-' in passin:
-        return 1
-    return 0
-
-def contains_uppercase(passin):
-    uppercaseLetter = "ABCDEFGHIJKLMNOPQRST"
-    for x in uppercaseLetter:
+    specials = "!?@#$%_-"
+    for x in specials:
         if x in passin:
             return 1
     return 0
+
+def contains_chars_and_nums(passin):
+    uppercaseLetter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    numbers = "1234567890"
+    safety = 0
+    for x in uppercaseLetter:
+        if x in passin:
+            safety += 1
+            break
+    for x in uppercaseLetter.lower():
+        if x in passin:
+            safety += 1
+            break
+    for x in numbers:
+        if x in passin:
+            safety += 1
+            break
+    return safety
 
 def contains_common(passin):
     commonPassword = ["qwertzui", "qwertyui", "abcdefgh", "password", "password123", "12345678"]
     for x in commonPassword:
         if x in passin.lower():
-            return 1
-    return 0
+            return 0
+    return 1
 
 def check_safety(passin):
-    safetyMeter = 0
-    if contains_special(passin):
-        safetyMeter += 1
-    if contains_uppercase(passin):
-        safetyMeter += 1
-    if not contains_common(passin):
-        safetyMeter += 1
-    return safetyMeter
+    return contains_special(passin) + contains_chars_and_nums(passin) + contains_common(passin)
 
 storedPasswords = []
 def check_similarity(passin):

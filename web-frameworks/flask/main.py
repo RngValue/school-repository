@@ -25,10 +25,10 @@ def bruw():
         case "POST":
             if len(request.form["password"]) >= 8:
                 if check_similarity(request.form["password"]):
-                    return "bruw: {}<br/>Your password is this safe: {}/3<br/>your password matches with another one (not saved)".format(request.form["password"], check_safety(request.form["password"]))
+                    return "bruw: {}<br/>Your password is this safe: {}/5<br/>your password matches with another one (not saved)".format(request.form["password"], check_safety(request.form["password"]))
                 else:
-                    return "bruw: {}<br/>Your password is this safe: {}/3<br/>your password matches with neither of your passwords (saved)".format(request.form["password"], check_safety(request.form["password"]))
-            return "bruw: {}<br/>Your password is this safe: {}/3<br/>Password length must be atleast 8 characters long.".format(request.form["password"], check_safety(request.form["password"]))
+                    return "bruw: {}<br/>Your password is this safe: {}/5<br/>your password matches with neither of your passwords (saved)".format(request.form["password"], check_safety(request.form["password"]))
+            return "bruw: {}<br/>Your password is this safe: {}/5<br/>Password length must be atleast 8 characters long.".format(request.form["password"], check_safety(request.form["password"]))
 
 if __name__ == "__main__":
     app.run()
